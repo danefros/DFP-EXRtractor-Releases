@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>DFP EXtractoR</title>
+        <item>
+            <title>1.0</title>
+            <pubDate>Sun, 06 Sep 2026 17:06:59 -0700</pubDate>
+            <link>https://github.com/danefros/DFP-EXRtractor-Releases</link>
+            <sparkle:version>189</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<!--
+  The what's-new fragment Sparkle shows inside its update window for 1.0.
+
+  A FRAGMENT AND NOT A PAGE: no DOCTYPE, no <html>, no <head>, no <body>.
+  `generate_appcast --embed-release-notes` puts this text inside appcast.xml,
+  where it ends up covered by the appcast's own EdDSA signature, and Sparkle
+  renders it in a small web view inside the update window.
+
+  HAND-WRITTEN, ONE FILE PER VERSION, until the docs suite exists (D182, D186).
+  Callout renders its equivalent from `Tools/docs/notes/current.js` — the same
+  source as its Release Notes PDF — so the two cannot drift (its D385). This app
+  has no docs pipeline and no Release Notes to drift from, so the honest form is
+  a file somebody writes and `publish-update.sh` refuses to publish without.
+  When the docs question is answered, this becomes a generated file and that
+  check becomes Callout's freshness comparison.
+
+  ONE HONEST LINE. ~~This build has never been cut, signed or sent to
+  anybody~~ — SUPERSEDED IN PLACE, Sep 6, 2026 (D188): `./release.sh` has now
+  been run once, and its first run found two defects rather than producing a
+  cut. Nothing has been sent to anybody and no `--publish` has happened, so the
+  fragment below is unchanged: there is still nothing to claim beyond what the
+  version is. `RELEASES.md` carries the status and the verifier flips its row
+  after a successful cut.
+-->
+<h2>DFP EXtractoR 1.0</h2>
+<p>
+  Multilayer OpenEXR sequences to ProRes and PNG, with Cryptomatte matte
+  extraction and light-group export — and, from this build on, the app can
+  update itself.
+</p>
+]]></description>
+            <enclosure url="https://github.com/danefros/DFP-EXRtractor-Releases/releases/download/v1.0-b189/DFP-EXRtractor-1.0-b189.zip" length="9938924" type="application/octet-stream" sparkle:edSignature="7am8VI1ioDAtUv5p6XIa1gKxHO5sEI/syR5U1M5yK/t54olM5LmV+TmULG0CAr7SBR23xSZBtVXtt+tFZqoHBg=="/>
+        </item>
+    </channel>
+</rss>
