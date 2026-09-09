@@ -4,6 +4,71 @@
         <title>DFP EXtractoR</title>
         <item>
             <title>1.0</title>
+            <pubDate>Wed, 09 Sep 2026 16:22:53 -0700</pubDate>
+            <link>https://github.com/danefros/DFP-EXRtractor-Releases</link>
+            <sparkle:version>191</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<!--
+  The what's-new fragment Sparkle shows inside its update window for 1.0.
+
+  A FRAGMENT AND NOT A PAGE: no DOCTYPE, no <html>, no <head>, no <body>.
+  `generate_appcast --embed-release-notes` puts this text inside appcast.xml,
+  where it ends up covered by the appcast's own EdDSA signature, and Sparkle
+  renders it in a small web view inside the update window.
+
+  HAND-WRITTEN, ONE FILE PER VERSION, until the docs suite exists (D182, D186).
+  Callout renders its equivalent from `Tools/docs/notes/current.js` — the same
+  source as its Release Notes PDF — so the two cannot drift (its D385). This app
+  has no docs pipeline and no Release Notes to drift from, so the honest form is
+  a file somebody writes and `publish-update.sh` refuses to publish without.
+  When the docs question is answered, this becomes a generated file and that
+  check becomes Callout's freshness comparison.
+
+  ONE HONEST LINE. ~~This build has never been cut, signed or sent to
+  anybody~~ — SUPERSEDED IN PLACE, Sep 6, 2026 (D188): `./release.sh` has now
+  been run once, and its first run found two defects rather than producing a
+  cut. ~~Nothing has been sent to anybody and no `--publish` has happened, so
+  the fragment below is unchanged: there is still nothing to claim beyond what
+  the version is.~~ **SUPERSEDED IN PLACE, Sep 8, 2026 (D190): BUILD 189 WAS
+  PUBLISHED**, by the owner himself, Sep 8, 2026 at 11:04 — GitHub release
+  `v1.0-b189`, feed commit `b937948` — so people are running it and the feed is
+  live. **Build 190 carries D190**: an export past about fifty frames wedged
+  inside the encoder and Stop could not reach it, which the owner met within
+  minutes of installing 189. That is what the SECOND paragraph below says.
+
+  ONE FRAGMENT, EVERY ITEM OF THE VERSION. Sparkle shows this file for BOTH 1.0
+  items, so a build-specific paragraph is ADDED here rather than written to a
+  new file. Build 189's copy is already embedded in the live appcast and covered
+  by its signature — it cannot change, and nothing here rewrites it; what is
+  added is what somebody upgrading FROM 189 reads. `RELEASES.md` carries the
+  status and the verifier flips its row after a successful cut.
+-->
+<h2>DFP EXtractoR 1.0</h2>
+<p>
+  Multilayer OpenEXR sequences to ProRes and PNG, with Cryptomatte matte
+  extraction and light-group export — and, from this build on, the app can
+  update itself.
+</p>
+<p>
+  Fixed in this build: an export longer than about fifty frames could freeze
+  part-way through, and Stop could not reach it while it was stuck. Long
+  sequences now run to the end, and Stop lands within a frame of the press.
+</p>
+<p>
+  Press Stop a second time to give up the frame that's currently rendering: the
+  export stops right away instead of waiting for a slow frame to finish, and the
+  summary tells you exactly which frame it dropped. The export bar now shows how
+  long the current frame has been going whenever it is running unusually slow,
+  and a frame that stalls for good is failed automatically — with a folder you
+  can retry — rather than hanging with nobody there.
+</p>
+]]></description>
+            <enclosure url="https://github.com/danefros/DFP-EXRtractor-Releases/releases/download/v1.0-b191/DFP-EXRtractor-1.0-b191.zip" length="9993675" type="application/octet-stream" sparkle:edSignature="5vo7FSVXEgQzzeOZ7OP54ToItdRPPxGlwnkTv11DZ6tlhdwgYWfuBEit4LwRTVwIYlHCyrzrWUlZGlSKJJ7nCQ=="/>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Tue, 08 Sep 2026 12:31:18 -0700</pubDate>
             <link>https://github.com/danefros/DFP-EXRtractor-Releases</link>
             <sparkle:version>190</sparkle:version>
